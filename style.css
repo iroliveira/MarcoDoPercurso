@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxygen:wght@300;700&display=swap');
+*{margin: 0; padding: 0;}
+
+
+h2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    color: #0D0D0D;
+}
+h3{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    color: #1f1f1f;
+}
+h4{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1rem;
+    color: #1f1f1f;
+}
+
+h5{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 2rem;
+    color: #1f1f1f;  
+}
+
+p{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1rem;
+    color:white;
+    text-align:start;
+    text-overflow: ellipsis;
+}
+header{
+    height: 200px;
+    width: 100%;
+    background-color: #0D0D0D;
+    overflow: hidden;
+}
+
+.header-img{
+    height: 200px;
+    position: absolute;
+    right: 0;
+}
+
+nav{
+    height: 50px;
+    width: 100%;
+    background-color: #F2E529;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    padding: 5px;
+    line-height: 40px;
+    box-sizing: border-box;
+    text-align: right;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    color: #0D0D0D;
+    z-index: 1;
+}
+
+nav, a:link, a:visited{
+    color: #0D0D0D;
+}
+
+nav, a:hover, a:active{
+    color:#bfbbba ;
+    text-decoration:double;
+}
+
+#destaque{
+    width: 100%;
+    height: 230px;
+    display: flex;
+    background-color: #0D0D0D;
+    padding: 10px 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.noticias-destaque{
+    position: relative;
+    margin: auto;
+}
+
+.destaque-imagem{
+    width: 360px;
+    height: 210px;
+    border-radius: 15px;
+}
+
+.noticias-destaque-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 360px;
+    height: 210px;
+    opacity: 0;
+    transition: .5s ease;
+    border-radius: 15px;
+    background-color: #bfb417;
+}
+
+.noticias-destaque:hover .noticias-destaque-overlay{
+    opacity: 1;
+}
+
+.noticias-destaque-conteudo{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+article{
+    height: 1500px;
+    width: 80%;
+    background-color: white;
+    overflow-y: auto;
+    overflow-x: hidden;
+    float: left;
+}
+
+.post-img{
+    background-color: black;
+    width: 218px;
+    height: 123px;
+    padding: 2px;
+    border-radius: 2px;
+    margin-top: 5px;
+    margin-right: 10px;
+    float: left;
+}
+
+p.post-conteudo{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1rem;
+    font-weight:500;
+    color: #212121;
+    text-align: justify;
+}
+
+.post{
+    background-color: #F2E529;
+    width: 75%;
+    height: 200px;
+    padding: 20px;
+    align-items: center;
+    margin: 10px auto 10px auto;
+    border-radius: 5px;
+    clear: both;
+}
+
+.post:hover{
+    background-color: #d9cc1e;
+}
+
+.post-conteudo{
+    line-height: 20px;
+    height: 160px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    text-align: justify;
+}
+
+aside{
+    height: 1500px;
+    width: 20%;
+    background-color:#0D0D0D;
+    overflow: hidden;
+    float: left;
+}
+
+.social-card{
+    background-color: white;
+    border-radius: 10px;
+    width: 95%;
+    height: 40px;
+    padding: 5px;
+    margin: 5px;
+    clear: both;
+}
+
+.social-card:hover{
+    background-color: white;
+}
+
+.aside-titulo{
+    height: 35px;
+    margin: 3px 2px 3px 4px ;
+    padding: 1px;
+}
+
+p.aside-titulo{
+    text-align:left;
+    color: #F2E529;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+}
+
+a.social-conteudo:link{color: #0D0D0D; text-decoration: none}
+a.social-conteudo:visited{color: #0D0D0D; text-decoration: none}
+a.social-conteudo:hover{color: #0D0D0D; text-decoration: none; font-size: 120%}
+
+.social-img{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    margin-left: 5px;
+    float: left;
+}
+
+.social-conteudo{
+    max-width: 250px;
+    line-height: 40px;
+    height: 40px;
+    color: #0D0D0D;
+    overflow: hidden;
+    float: left;
+}
+
+footer{
+    clear: both;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    background-color:#0D0D0D; 
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+img.ft-multimidia{
+    height: 95px;
+    width: 95px;
+}
+
+p.ft-txt{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1em;
+    text-align: right;
+    margin: 10px 10px 10px auto;
+    color: white;
+}
+
+#contato{
+    overflow: auto;
+}
+
+#contato p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form{
+    width: 500px;
+    margin: 0 auto;
+}
+
+input, select, textarea{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    border: 1px solid #C4C4C4;
+    color: #777;
+}
+
+label, fieldset, input, select, textarea{
+    font: 1rem 'Roboto', sans-serif;
+}
+
+fieldset{
+    border: 1px solid #CCC;
+    margin-bottom: 10px;
+    padding:10px;
+}
+
+#data-hora-num{
+    display: flex;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+    margin-left: 50px;
+}
+
+textarea{
+    height: 80px;
+}
+
+#botoes-form{
+    display: flex;
+}
+
+input[type="submit"], input[type="reset"]{
+    margin: 0 5px 0 5px;
+    background-color: #8BC34A;
+    color: #FFF;
+    border: 0;
+    border-radius: 5px;
+}
+
+input[type="reset"]{
+    background-color: #F47E7E;
+}
+
+.Materia{
+    background-color: #0D0D0D;
+}
+
+img.Materia{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position:initial;
+}
+.Avaliação{
+    background-color: #0D0D0D;
+    position: sticky;
+    top: 50px;
+}
+
+.Materia-Conteudo{
+    margin: 10px 20px 10px 15px;
+    padding: 5px;
+}
+
+h2.Materia-Conteudo{
+    font-size: 4rem;
+}
+
+h4.Materia-Conteudo{
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+a.FonteMateria:link{font-size: 1.2rem;color: #d9cc1e; text-decoration: none}
+a.FonteMateria:visited{font-size: 1.2rem;color: #d9cc1e; text-decoration: none}
+a.FonteMateria:hover{font-size: 1.2rem;color: #d9cc1e; text-decoration: none; font-size: 150%}
+
+p.materia-conteudo-texto{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.1rem;
+    margin: 25px;
+    color: #212121;
+    text-align: justify;
+}
+
